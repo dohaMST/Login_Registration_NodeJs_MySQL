@@ -1,0 +1,106 @@
+@import "./helper";
+
+.login{
+    // background-color: red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    .loginContainer{
+        background-color: rgb(153, 193, 193);
+        height: fit-content;
+        padding: 2rem;
+        border-radius: .5rem;
+        h2{
+            color: #fffefe;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        form{
+            // background-color: red;
+            div{
+                // background-color: aliceblue;
+                display: flex;
+                flex-direction: column;
+                label{
+                    text-transform: capitalize;
+                    font-size: 1.1rem;
+                    // background-color: rebeccapurple;
+                    padding: .5rem 0;
+                }
+                input{
+                    background-color: transparent;
+                    padding: .5rem;
+                    border-radius: .5rem;
+                    border: none;
+                    border-bottom: 1px solid #ff0000;
+                    font-size: 1.1rem;
+                    outline: none;
+                    margin-bottom: 1rem;
+                    color: rgb(73, 35, 135) ;
+                    &::placeholder{
+                        text-transform: capitalize;
+                    }
+                    &:focus{
+                        border: 1px solid #ffd000;
+                    }
+                }
+                .text-err{
+                    color: red;
+                    margin: .5rem 0 1rem;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+            button{
+                padding: .5rem 1rem;
+                border-radius: .5rem;
+                font-size: 1.1rem;
+                text-transform: capitalize;
+                font-weight: 600;
+                border: none;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &.loginBtn{
+                    background-color: rgb(0, 255, 166);
+                    color: rgb(103, 105, 108);
+                    &:hover{
+                    
+                        background-color: rgb(0, 113, 74);
+                        color: rgb(249, 252, 255);
+                    }
+                }
+            }
+            .registerLink{
+                padding: .5rem 1rem;
+                border-radius: .5rem;
+                font-size: 1.1rem;
+                text-transform: capitalize;
+                font-weight: 600;
+                border: none;
+                cursor: pointer;
+                background-color: rgb(130, 130, 130);
+                color: rgb(236, 236, 237);
+                text-align: center;
+                text-decoration: none;
+                transition: .3s ease-in-out;
+                    &:hover{
+                    
+                        background-color: rgb(22, 26, 25);
+                        color: rgb(249, 252, 255);
+                    }
+            }
+            p{
+                margin: 1rem .5rem;
+                padding: 0 .7rem;
+                font-size: .9rem;
+                text-transform: capitalize;
+                // background-color: red;
+            }
+        }
+    }
+}
